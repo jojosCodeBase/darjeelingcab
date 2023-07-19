@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darjeeling Cab</title>
+    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css_2/services.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .fit-screen {
+            height: 100vh;
+            /* Set the image height to 100% of viewport height */
+            object-fit: cover;
+            /* Maintain aspect ratio and cover the container */
+        }
+
+        .car-fit {
+            width: 100%;
+            /* or any custom size */
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light p-0" href="#"><img src="img/darjeelingcab-logo.png" width="100px" height="100px" class="scr-fit" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item mx-3">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="#" class="nav-link">Tour Packages</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="#" class="nav-link">Our Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="#" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+                <div class="btn btn-warning mx-lg-5 mx-sm-3">Book Now</div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" href="img/ghoom.jpg" xmlns="img/ghoom.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+                    <img src="img/Kangchenjunga.jpg" class="img-fluid fit-screen" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Example headline.</h1>
+                            <p class="opacity-75">Some representative placeholder content for the first slide of the
+                                carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+                    <img src="img/sandakphu.jpg" class="img-fluid fit-screen" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+                    <div class="container">
+                        <img src="img/darjeeling.jpg" class="img-fluid fit-screen" alt="">
+                        <div class="carousel-caption text-end">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+                    <div class="container">
+                        <img src="img/sikkim.jpg" class="img-fluid fit-screen" alt="">
+                        <div class="carousel-caption text-end">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!-- <section class="py-5 text-center container bg-light">
+            <h1 class="fw-light">Our Services</h1>
+        </section> -->
+        <div id="product" class="product container bg-warning">
+            <!-- <div class="container"> -->
+            <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>OUR<strong class="black"> services</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+            <div class="container bg-warning">
+                <div class="row justify-content-center">
+                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                        <img src="img/local-taxi.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Local Taxi</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                        <img src="img/pickup.jpeg" class="card-img-top img-fluid" width="100%" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Pickup</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                        <img src="img/card-image.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Drop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                        <img src="img/train.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">NJP</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                        <img src="img/bagdogra.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Bagdogra</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                        <img src="img/bus.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Bus Terminal</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="mb-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- product start -->
+        <div id="product" class="product container bg-primary mt-5">
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                <h2>OUR<strong class="black"> vehicles</strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="product_box ">
+                                    <figure><img src="img/tata-sumo.jpg" class="fit-screen" alt="#" />
+                                        <h3>TATA SUMO</h3>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="product_box">
+                                    <figure><img src="img/innvoa.jpg" alt="#" class="fit-screen car-fit" />
+                                        <h3>TOYOTA INNOVA</h3>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product_box">
+                                    <figure><img src="img/wagonr.jpg" class="car-fit fit-screen" alt="#" />
+                                        <h3>WAGON R</h3>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product_box">
+                                    <figure><img src="img/swift-dzire.jpg" class="car-fit fit-screen" alt="#" />
+                                        <h3>SWIFT DESIRE </h3>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="product_box">
+                                    <figure><img src="img/bolero.jpg" class="fir-screen car-fit" alt="#" />
+                                        <h3>BOLERO</h3>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="product_box">
+                                    <figure><img src="img/card-image.jpg" alt="#" />
+                                        <h3>TITLE</h3>
+                                    </figure>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end product -->
+    </main>
+    <div class="container-fluid bg-light">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <!-- <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <p class="text-body-secondary">&copy; 2023</p>
+            </div> -->
+
+            <div class="col-md-4 ms-md-3 mb-3"> 
+                <h1>Darjeeling Cab</h1>
+                <p style="text-align: justify;">
+                    Discover Darjeeling Cab, your premier choice for exploring Darjeeling, Sikkim, and Kalimpong. Book our comfortable cabs to traverse these stunning destinations. Experience the tea gardens of Darjeeling, the snow-capped mountains of Sikkim, and the rich heritage of Kalimpong. Trust our experienced drivers to make your journey unforgettable. Reserve your cab now and embark on an extraordinary travel adventure with Darjeeling Cab.
+                </p> 
+            </div>
+
+            <div class="col-md-1 ms-md-4 mb-3">
+                <h5>MENU</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>            
+
+            <div class="col-md-3 mb-3 ms-md-5">
+                <h5>Address</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Peshok Tea Garden, Peshok</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Rangli Rangliot,</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Darjeeling - 734312</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Phone: 8967386612</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email: darjeelingcab@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 ms-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <form class="form-group" action="">
+                    <!-- <label for="" class="mt-3">Email</label> -->
+                    <input type="email" class="form-control mt-3" placeholder="Email*">
+                    <input type="submit" class="btn btn-warning mt-3" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    <div class="container">
+        <h3>About Us</h3>
+        <p>
+            Welcome to Darjeeling Cab, your premier choice for exploring the breathtaking landscapes of Darjeeling, Sikkim, and Kalimpong. Our dedicated cab service is designed to cater to the needs of both guests and tourists, ensuring a comfortable and unforgettable journey. Whether you wish to soak in the mesmerizing beauty of Darjeeling's tea gardens, embark on an adventure in Sikkim's snow-capped mountains, or immerse yourself in the rich cultural heritage of Kalimpong, our experienced and courteous drivers are here to guide you. With our convenient booking system, you can effortlessly reserve a cab and effortlessly traverse through the scenic locales, capturing memories that will last a lifetime. Trust Darjeeling Cab to make your travel experience extraordinary.
+        </p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-KyknwW0c6n2GYk8FlVdYy03bdZP2+fTs9k8ODD6apBht2L3KFqbIKjmw1y+9zQnt"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
