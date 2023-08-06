@@ -7,35 +7,15 @@
     <title>Darjeeling Cab</title>
     <link href="css/carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css_2/services.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/style.css">
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f1f1f1;
-        }
-
-        .fit-screen {
-            height: 100vh;
-            /* Set the image height to 100% of viewport height */
-            object-fit: cover;
-            /* Maintain aspect ratio and cover the container */
-        }
-
-        .car-fit {
-            width: 100%;
-            /* or any custom size */
-            height: 100%;
-            object-fit: contain;
-        }
-    </style>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand text-light p-0" href="#"><img src="img/darjeelingcab-logo.png" width="100px" height="100px" class="scr-fit" alt=""></a>
+            <a class="navbar-brand text-light p-0" href="#"><img src="img/darjeelingcab-logo.png" width="100px"
+                    height="100px" class="scr-fit" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,10 +29,13 @@
                         <a href="#" class="nav-link">Tour Packages</a>
                     </li>
                     <li class="nav-item mx-3">
+                        <a href="places-to-visit.html" class="nav-link">Destinations</a>
+                    </li>
+                    <li class="nav-item mx-3">
                         <a href="#" class="nav-link">Our Services</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a href="#" class="nav-link">About us</a>
+                        <a href="about-us.html" class="nav-link">About us</a>
                     </li>
                     <li class="nav-item mx-3">
                         <a href="#" class="nav-link">Contact us</a>
@@ -63,7 +46,7 @@
         </div>
     </nav>
     <main>
-        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+        <div id="myCarousel" class="container-fluid p-0 carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -118,19 +101,19 @@
                     </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
         <!-- <section class="py-5 text-center container bg-light">
             <h1 class="fw-light">Our Services</h1>
         </section> -->
-        <div id="product" class="product container bg-warning">
+        <div id="product" class="product container bg-light">
             <!-- <div class="container"> -->
             <!-- <div class="container"> -->
             <div class="row">
@@ -142,57 +125,55 @@
             </div>
             <!-- </div> -->
             <!-- </div> -->
-            <div class="container bg-warning">
+            <div class="container bg-light">
                 <div class="row justify-content-center">
-                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                    <div class="card-shadow card mx-3 mb-4 p-0" style="width: 18rem;">
                         <img src="img/local-taxi.jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Local Taxi</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        <div class="card-body text-center bg-warning">
+                            <h5 class="card-title">Local Taxi</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
-                                the card's content.</p>
+                                the card's content.</p> -->
                         </div>
                     </div>
-                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                    <div class="card-shadow card mx-3 mb-4 p-0" style="width: 18rem;">
                         <img src="img/pickup.jpeg" class="card-img-top img-fluid" width="100%" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Pickup</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
+                        <div class="card-body text-center">
+                            <!-- <h5 class="card-title">Pickup</h5> -->
+                            <span>Pickup / Drop</span>
                         </div>
                     </div>
-                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                    <div class="card-shadow card mx-3 mb-4 p-0" style="width: 18rem;">
                         <img src="img/card-image.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Drop</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sightseeing</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
-                                the card's content.</p>
+                                the card's content.</p> -->
                         </div>
                     </div>
-                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                    <div class="card-shadow card mx-3 mb-4 p-0" style="width: 18rem;">
                         <img src="img/train.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">NJP</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">NJP</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
                         </div>
                     </div>
-                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                    <div class="card-shadow card mx-3 mb-4 p-0" style="width: 18rem;">
                         <img src="img/bagdogra.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Bagdogra</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bagdogra</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
                         </div>
                     </div>
-                    <div class="card mx-3 mb-4" style="width: 18rem;">
+                    <div class="card-shadow card mx-3 mb-4 p-0" style="width: 18rem;">
                         <img src="img/bus.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Bus Terminal</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bus Terminal</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of
                                 the card's content.</p>
@@ -204,7 +185,7 @@
         </div>
 
         <!-- product start -->
-        <div id="product" class="product container bg-primary mt-5">
+        <div id="product" class="product container bg-light mt-5">
             <div class="container">
                 <div class="container">
                     <div class="row">
@@ -256,9 +237,12 @@
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                 <div class="product_box">
                                     <figure><img src="img/bolero.jpg" class="fir-screen car-fit" alt="#" />
-                                        <h3>BOLERO</h3>
+                                        <div class="text-center">
+                                            <button class="btn btn-warning" type="button">Book Now</button>
+                                        </div>
                                     </figure>
                                 </div>
+                                
                             </div>
                             <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                 <div class="product_box">
@@ -285,11 +269,15 @@
                 <p class="text-body-secondary">&copy; 2023</p>
             </div> -->
 
-            <div class="col-md-4 ms-md-3 mb-3"> 
+            <div class="col-md-4 ms-md-3 mb-3">
                 <h1>Darjeeling Cab</h1>
                 <p style="text-align: justify;">
-                    Discover Darjeeling Cab, your premier choice for exploring Darjeeling, Sikkim, and Kalimpong. Book our comfortable cabs to traverse these stunning destinations. Experience the tea gardens of Darjeeling, the snow-capped mountains of Sikkim, and the rich heritage of Kalimpong. Trust our experienced drivers to make your journey unforgettable. Reserve your cab now and embark on an extraordinary travel adventure with Darjeeling Cab.
-                </p> 
+                    Discover Darjeeling Cab, your premier choice for exploring Darjeeling, Sikkim, and Kalimpong. Book
+                    our comfortable cabs to traverse these stunning destinations. Experience the tea gardens of
+                    Darjeeling, the snow-capped mountains of Sikkim, and the rich heritage of Kalimpong. Trust our
+                    experienced drivers to make your journey unforgettable. Reserve your cab now and embark on an
+                    extraordinary travel adventure with Darjeeling Cab.
+                </p>
             </div>
 
             <div class="col-md-1 ms-md-4 mb-3">
@@ -301,21 +289,23 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
                 </ul>
-            </div>            
+            </div>
 
             <div class="col-md-3 mb-3 ms-md-5">
-                <h5>Address</h5>
+                <h5>ADDRESS</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Peshok Tea Garden, Peshok</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Rangli Rangliot,</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Darjeeling - 734312</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Phone: 8967386612</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email: darjeelingcab@gmail.com</a></li>
+                    <li class="nav-item mb-1">
+                        <span class="p-0 text-primary">Peshok Tea Garden, Peshok, Rangli Rangliot, Darjeeling - 734312</span>
+                    </li>
+                    <li class="nav-item mb-1">                        
+                        <span class="p-0 text-primary">Phone: 8967386612</span>                        
+                    </li>
+                    <li class="nav-item mb-2"><span class="p-0 text-primary">Email: darjeelingcab@gmail.com</span></li>
                 </ul>
             </div>
 
             <div class="col-md-3 ms-md-4 mb-3">
-                <h5>Contact Us</h5>
+                <h5>CONTACT US</h5>
                 <form class="form-group" action="">
                     <!-- <label for="" class="mt-3">Email</label> -->
                     <input type="email" class="form-control mt-3" placeholder="Email*">
@@ -325,21 +315,20 @@
         </footer>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
         <h3>About Us</h3>
         <p>
-            Welcome to Darjeeling Cab, your premier choice for exploring the breathtaking landscapes of Darjeeling, Sikkim, and Kalimpong. Our dedicated cab service is designed to cater to the needs of both guests and tourists, ensuring a comfortable and unforgettable journey. Whether you wish to soak in the mesmerizing beauty of Darjeeling's tea gardens, embark on an adventure in Sikkim's snow-capped mountains, or immerse yourself in the rich cultural heritage of Kalimpong, our experienced and courteous drivers are here to guide you. With our convenient booking system, you can effortlessly reserve a cab and effortlessly traverse through the scenic locales, capturing memories that will last a lifetime. Trust Darjeeling Cab to make your travel experience extraordinary.
+            Welcome to Darjeeling Cab, your premier choice for exploring the breathtaking landscapes of Darjeeling,
+            Sikkim, and Kalimpong. Our dedicated cab service is designed to cater to the needs of both guests and
+            tourists, ensuring a comfortable and unforgettable journey. Whether you wish to soak in the mesmerizing
+            beauty of Darjeeling's tea gardens, embark on an adventure in Sikkim's snow-capped mountains, or immerse
+            yourself in the rich cultural heritage of Kalimpong, our experienced and courteous drivers are here to guide
+            you. With our convenient booking system, you can effortlessly reserve a cab and effortlessly traverse
+            through the scenic locales, capturing memories that will last a lifetime. Trust Darjeeling Cab to make your
+            travel experience extraordinary.
         </p>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha384-KyknwW0c6n2GYk8FlVdYy03bdZP2+fTs9k8ODD6apBht2L3KFqbIKjmw1y+9zQnt"
-        crossorigin="anonymous"></script>
-
+    </div> -->
+    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>

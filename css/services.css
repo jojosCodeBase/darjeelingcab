@@ -137,7 +137,8 @@ box-sizing: border-box;
 /** end product **/
 
 .black {
-    color: #63ce33;
+    /* color: #63ce33; */
+    color: #FFC107;
     font-weight: 208;
 }
 

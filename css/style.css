@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f1f1;
+}
+
+.fit-screen {
+    height: 100vh;
+    /* Set the image height to 100% of viewport height */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+.car-fit {
+    width: 100%;
+    /* or any custom size */
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adjust the values for your desired shadow effect */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* Adjust the scaling factor as desired */
+}
+
+.card img {
+    opacity: 85%;
+}
+
+.card:hover img {
+    opacity: 100%;
+}
+
+
+.product_box:hover {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M6 0L2 4l4 4V0z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2 0l4 4-4 4V0z'/%3E%3C/svg%3E");
+}
