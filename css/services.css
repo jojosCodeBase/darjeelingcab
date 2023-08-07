@@ -148,9 +148,10 @@ box-sizing: border-box;
     padding: 0px 0px 6px 0px;
 text-transform: uppercase;
 font-weight: 500;
-color: #052501;
+/* color: #052501; */
+color: #fff;
 line-height: 46px;
-border-bottom: #052501 solid 1px;
+border-bottom: #fc0 solid 2px;
 font-size: 50px;
 max-width: 374px;
 width: 100%;
