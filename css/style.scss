@@ -1,0 +1,47 @@
+.why_section {
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 90px;
+        padding: 25px 25px 45px 25px;
+        background: $secondary;
+        color: $white;
+
+        &.b2 {
+            margin-top: 45px;
+        }
+
+        .img-box {
+            min-width: 90px;
+            min-height: 90px;
+            max-width: 90px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 5px solid $bgColor;
+            border-radius: 100%;
+            background-color: $white;
+
+            img {
+                width: 45px;
+                transition: all 1s;
+            }
+        }
+
+        .detail-box {
+            h5 {
+                font-weight: 600;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &:hover {}
+    }
+}

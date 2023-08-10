@@ -78,3 +78,7 @@ body {
     border-bottom: 3px solid #fc0;
     padding-bottom: 7px;
   }
+
+  .bg-color{
+    background-color: #1b1f71;
+  }
