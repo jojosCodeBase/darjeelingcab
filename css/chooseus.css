@@ -1,21 +1,3 @@
-@media (max-width: 768px) {
-    .slider_section {
-        padding: 40px 0 145px 0;
-    }
-
-    .slider_section .img-box {
-        margin-top: 30px;
-    }
-
-
-    .about_section .detail-box,
-    .why_section .box,
-    .app_section .img-box {
-        margin-top: 45px;
-    }
-}
-
-
 .why_section .box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,15 +56,41 @@
 .heading_container h2 {
     position: relative;
     font-weight: bold;
-  }
+}
 
-  .header-title{
+.header-title {
     font-weight: bold;
     text-align: center;
     font-size: 40px;
-  }
-  
-  .detail-box h5{
+}
+
+.detail-box h5 {
     color: #fff;
     font-size: 1.3rem;
-  }
+}
+
+@media (max-width: 768px) {
+    .slider_section {
+        padding: 40px 0 145px 0;
+    }
+
+    .slider_section .img-box {
+        margin-top: 30px;
+    }
+
+
+    .about_section .detail-box,
+    .why_section .box,
+    .app_section .img-box {
+        margin-top: 45px;
+    }
+
+    .heading_container h2 {
+        font-size: 2rem;
+        margin-bottom: 0px;
+    }
+
+    .why_section .box {
+        margin-top: 10px;
+    }
+}

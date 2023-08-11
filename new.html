@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darjeeling Cab</title>
+    <link href="css/carousel.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        padding: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light p-0" href="#"
+          ><img
+            src="img/darjeelingcab-logo.png"
+            width="100px"
+            height="100px"
+            class="scr-fit"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#" class="nav-link">Tour Packages</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="places-to-visit.html" class="nav-link">Destinations</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#product" class="nav-link">Our Services</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="about-us.html" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#contact" class="nav-link">Contact us</a>
+            </li>
+          </ul>
+          <div class="btn btn-warning mx-lg-5 mx-sm-3">Book Now</div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class=""
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class="active"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class=""
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+            class=""
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/Kangchenjunga.jpg"
+              alt="Kangchenjunga"
+              class="w-100 h-100 object-fit-cover"
+            />
+            <div class="container">
+              <div class="carousel-caption text-center card-container">
+                <h1>Example headline.</h1>
+                <p class="opacity-75">
+                  Some representative placeholder content for the first slide of
+                  the carousel.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/sandakphu.jpg"
+              alt="sandakphu"
+              class="w-100 h-100 object-fit-cover"
+            />
+            <div class="container">
+              <div class="carousel-caption card-container">
+                <h1>Another example headline.</h1>
+                <p>
+                  Some representative placeholder content for the second slide
+                  of the carousel.
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/darjeeling.jpg"
+              alt=""
+              class="w-100 h-100 object-fit-cover"
+            />
+            <div class="container">
+              <div class="carousel-caption text-center card-container">
+                <h1>One more for good measure.</h1>
+                <p>
+                  Some representative placeholder content for the third slide of
+                  this carousel.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/sikkim.jpg"
+              alt=""
+              class="w-100 h-100 object-fit-cover"
+            />
+            <div class="container">
+              <div class="carousel-caption text-center card-container">
+                <h1>One more for good measure.</h1>
+                <p>
+                  Some representative placeholder content for the third slide of
+                  this carousel.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 ms-md-3 mb-3">
+            <span class="text-danger mb-5 brand">ABOUT</span>
+            <h1 class="mt-2">Welcome to Darjeeling Cab Service</h1>
+            <p class="justify">
+              Discover Darjeeling Cab, your premier choice for exploring
+              Darjeeling, Sikkim, and Kalimpong. Book our comfortable cabs to
+              traverse these stunning destinations. Experience the tea gardens
+              of Darjeeling, the snow-capped mountains of Sikkim, and the rich
+              heritage of Kalimpong. Trust our experienced drivers to make your
+              journey unforgettable. Reserve your cab now and embark on an
+              extraordinary travel adventure with Darjeeling Cab.
+            </p>
+          </div>
+
+          <!-- <div class="col-md-4 col-lg-4 ms-md-3 mb-3">
+                    <div class="image-container">
+                        <img src="img/darjeelingcab-logo.png" alt="">
+                      </div>
+                </div> -->
+
+          <div
+            class="col-md-4 col-lg-4 ms-md-3 mb-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="image-container">
+              <img src="img/darjeelingcab-logo.png" alt="" />
+            </div>
+          </div>
+
+          <!-- <div class="col d-flex justify-content-center align-items-center bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, consectetur.</div>
+                <div class="col d-flex justify-content-center align-items-center bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, consectetur.</div> -->
+        </div>
+      </div>
+
+      <!-- <section class="py-5 text-center container bg-light">
+            <h1 class="fw-light">Our Services</h1>
+        </section> -->
+      <div id="product" class="product container-fluid bg-dark">
+        <!-- <div class="container"> -->
+        <!-- <div class="container"> -->
+        <div class="row" id="services">
+          <div class="col-md-12">
+            <div class="title">
+              <h2>OUR<strong class="black"> services</strong></h2>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+        <div class="container bg-dark">
+          <div class="d-flex flex-column flex-sm-row justify-content-center p-3 gap-5">
+            <div class="card shadow-sm service-card">
+              <img src="./img/local-taxi.jpg" alt="Shared Taxi" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">
+                  Shared Taxi
+                </p>
+              </div>
+            </div>
+        
+            <div class="card shadow-sm service-card">
+              <img src="./img/pickup.jpeg" alt="Pickup/Drop" class="card-img-top rounded-top-2">
+              <div class="card-body">
+                <p class="card-text">
+                  Pickup/Drop
+                </p>
+              </div>
+            </div>
+        
+            <div class="card shadow-sm service-card">
+              <img src="./img/card-image.jpg" alt="Sightseeing" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">
+                  Sightseeing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why choose us -->
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-7 col-md-7 p-4">
+            <span class="text-danger brand">DARJEELING CAB</span>
+            <h4 class="mt-4">Why choose us?</h4>
+            <p class="justify">
+              With a passion for excellence, we invite you to choose us as your
+              trusted travel companion. Our commitment to providing exceptional
+              service, combined with a deep understanding of the region's hidden
+              gems, ensures that your journey with us will be nothing short of
+              extraordinary.
+
+              <!-- Whether you're a solo adventurer, a nature enthusiast, or a family seeking to create cherished
+                        memories, Darjeeling Cab is dedicated to crafting tailor-made itineraries that cater to your
+                        preferences and desires. With us, you're not just a passenger; you're a valued guest embarking
+                        on a remarkable travel adventure.
+
+                        Book your cab now and embark on a journey filled with captivating vistas, warm hospitality, and
+                        unforgettable moments. Choose Darjeeling Cab, and let us turn your travel dreams into a reality.
+                        Your exploration of these enchanting destinations begins with us – your gateway to a remarkable
+                        odyssey. -->
+            </p>
+            <p>
+              At Darjeeling Cab, we take pride in offering you a seamless and
+              comfortable ride through the picturesque tea gardens of
+              Darjeeling, the majestic snow-capped mountains of Sikkim, and the
+              culturally rich heritage of Kalimpong. Our fleet of
+              well-maintained and modern cabs, driven by experienced and
+              courteous chauffeurs, guarantees your safety and satisfaction
+              throughout your voyage.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Why choose us end-->
+
+      <!-- product start -->
+      <div id="product" class="product container-fluid bg-dark mt-5">
+        <div class="container">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="title">
+                  <h2>OUR<strong class="black"> vehicles</strong></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="product_box">
+                    <figure>
+                      <img src="img/tata-sumo.jpg" class="fit-screen" alt="#" />
+                      <h3>TATA SUMO</h3>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="product_box">
+                    <figure>
+                      <img
+                        src="img/innvoa.jpg"
+                        alt="#"
+                        class="fit-screen car-fit"
+                      />
+                      <h3>TOYOTA INNOVA</h3>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <div class="product_box">
+                    <figure>
+                      <img
+                        src="img/wagonr.jpg"
+                        class="car-fit fit-screen"
+                        alt="#"
+                      />
+                      <h3>WAGON R</h3>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <div class="product_box">
+                    <figure>
+                      <img
+                        src="img/swift-dzire.jpg"
+                        class="car-fit fit-screen"
+                        alt="#"
+                      />
+                      <h3>SWIFT DESIRE</h3>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="product_box">
+                    <figure>
+                      <img
+                        src="img/bolero.jpg"
+                        class="fir-screen car-fit"
+                        alt="#"
+                      />
+                      <h3>BOLERO</h3>
+                    </figure>
+                    <!-- <div class="text-center">
+                                        <button class="btn btn-warning" type="button">Book Now</button>
+                                    </div> -->
+                  </div>
+                </div>
+                <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="product_box">
+                                    <figure><img src="img/card-image.jpg" alt="#" />
+                                        <h3>TITLE</h3>
+                                    </figure>
+                                </div>
+                            </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end product -->
+    </main>
+    <div class="container-fluid mb-0 mt-0">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-5 mb-4">
+        <!-- <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <p class="text-body-secondary">&copy; 2023</p>
+            </div> -->
+
+        <div class="col-md-1 ms-md-4 mb-3">
+          <h5>LINKS</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-3 ms-md-5">
+          <h5>ADDRESS</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-1">
+              <span class="p-0 text-primary"
+                >Peshok Tea Garden, Peshok, Rangli Rangliot, Darjeeling -
+                734312</span
+              >
+            </li>
+            <li class="nav-item mb-1">
+              <span class="p-0 text-primary">Phone: 8967386612</span>
+            </li>
+            <li class="nav-item mb-2">
+              <span class="p-0 text-primary"
+                >Email: darjeelingcab@gmail.com</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 ms-md-4 mb-3" id="contact">
+          <h5>CONTACT US</h5>
+          <form class="form-group" action="">
+            <input type="email" class="form-control mt-3" placeholder="Email" />
+            <input type="submit" class="btn btn-warning mt-3" value="Submit" />
+          </form>
+        </div>
+      </footer>
+      <div class="row mb-5">
+        <span class="text-center"
+          >© Darjeeling Cab. All rights reserved | Designed and Developed by
+          Kunsang Moktan</span
+        >
+      </div>
+    </div>
+
+    <!-- <div class="container">
+        <h3>About Us</h3>
+        <p>
+            Welcome to Darjeeling Cab, your premier choice for exploring the breathtaking landscapes of Darjeeling,
+            Sikkim, and Kalimpong. Our dedicated cab service is designed to cater to the needs of both guests and
+            tourists, ensuring a comfortable and unforgettable journey. Whether you wish to soak in the mesmerizing
+            beauty of Darjeeling's tea gardens, embark on an adventure in Sikkim's snow-capped mountains, or immerse
+            yourself in the rich cultural heritage of Kalimpong, our experienced and courteous drivers are here to guide
+            you. With our convenient booking system, you can effortlessly reserve a cab and effortlessly traverse
+            through the scenic locales, capturing memories that will last a lifetime. Trust Darjeeling Cab to make your
+            travel experience extraordinary.
+        </p>
+    </div> -->
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

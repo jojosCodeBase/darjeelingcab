@@ -82,3 +82,25 @@ body {
   .bg-color{
     background-color: #1b1f71;
   }
+
+  .btn-green{
+    /* background-color: green; */
+    background-color: #128C7E;
+  }
+
+  .btn-whatsapp{
+    background-color: #25D366;
+  }
+  .dropdown-menu{
+    /* background-color: transparent; */
+    border: none;
+  }
+
+  .service-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }

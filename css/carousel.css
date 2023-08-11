@@ -57,6 +57,22 @@ body {
   letter-spacing: -.05rem;
 }
 
+.carousel-title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.opacity{
+  opacity: 80%;
+}
+
+.fc0{
+  color: #fc0;
+}
+
+.text-green{
+  color: #e70b1d;
+}
 /* rtl:end:remove */
 
 /* RESPONSIVE CSS
