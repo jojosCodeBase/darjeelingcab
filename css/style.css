@@ -84,15 +84,26 @@ body {
   }
 
   .btn-green{
-    /* background-color: green; */
     background-color: #128C7E;
+  }
+
+  .btn-green a{
+    color: #fff;
+  }
+
+  .btn-green:hover{
+    border: 2px solid #128C7E;
+    background-color: transparent;
+  }
+
+  .btn-green a:hover{
+    color: #128C7E;
   }
 
   .btn-whatsapp{
     background-color: #25D366;
   }
   .dropdown-menu{
-    /* background-color: transparent; */
     border: none;
   }
 
@@ -103,4 +114,17 @@ body {
     align-items: center;
     text-align: center;
     height: 100%;
+  }
+
+  .card-container {
+    background: #ffffff1a;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+  }
+
+  .navbar-nav .nav-item a:hover{
+    border-bottom: 2px solid black;
+    border-color:#fc0;
+    color:#fc0;
   }
