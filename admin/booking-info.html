@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Info</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fff;
+        }
+        .box{
+            /* background-color: #f1f1f1; */
+            border: 2px solid black;
+            /* width: 80%; */
+        }
+        table, tr, #jo{
+            /* border: 2px solid black; */
+        }
+
+        .title{
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="box p-4">
+                <h2 class="text-center">Booking Info</h2>
+                <div class="row">
+                    <table class="table">
+                        <tr>
+                            <td class="title">Booking ID</td>
+                            <td>1001</td>
+
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+
+                            <td class="title">Booking Date</td>
+                            <td>10-07-2023</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Name</td>
+                            <td>Sudipto Mondal</td>
+
+                            <td class="title">Phone</td>
+                            <td>1234567890</td>
+
+                            <td class="title">Pax</td>
+                            <td>8</td>
+                        </tr>
+                            
+                        <tr>
+                            <td class="title">From</td>
+                            <td>15-10-2023</td>
+
+                            <td class="title">To</td>
+                            <td>18-10-2023</td>
+
+                            <td class="title">Days</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+
+                    <table class="table table-bordered">
+                        <thead class="table-primary text-start">
+                            <th class="text-center">Day</th>
+                            <th>Description</th>
+                            <th>Per Day</th>
+                            <th>Amount</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Pickup from NJP and drop to Manjushree Homestay, Bara Mangwa Busty</td>
+                                <td>4200</td>
+                                <td>4200</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td>Drop to Tinchuley from Manjushree Homestay with local sightseeing</td>
+                                <td>4200</td>
+                                <td>4200</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td>Pickup from NJP and drop to Manjushree Homestay, Bara Mangwa Busty</td>
+                                <td>4200</td>
+                                <td>4200</td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>Total</td>
+                                <td>12800</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>Received</td>
+                                <td>3000</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>Balance</td>
+                                <td>9800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="buttons">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn btn-primary">Print</button></div>
+                            <div class="col-1 d-flex justify-content-center align-items-center mx-3"><button class="btn btn-success">Edit</button></div>
+                            <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn btn-danger">Delete</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -41,12 +41,16 @@
             display: none;
         }
 
-        @media (max-width: 576px){
+        .bt:hover{
+            cursor: pointer;
+        }
+
+        @media (max-width: 576px) {
             .card-info {
                 display: flex;
             }
 
-            .table-info{
+            .table-info {
                 display: none;
             }
         }
@@ -61,7 +65,7 @@
 
         <div class="container">
             <div class="row table-info">
-                <table class="table">
+                <table class="table text-center">
                     <thead class="table-primary">
                         <th>Booking ID</th>
                         <th>Guest Name</th>
@@ -70,6 +74,7 @@
                         <th>Vehicle</th>
                         <th>Driver</th>
                         <th>Vehicle no</th>
+                        <th>Action</th>
                     </thead>
                     <tbody>
                         <tr>
@@ -80,6 +85,13 @@
                             <td>INNOVA</td>
                             <td>BIKASH</td>
                             <td>WB 76A 1945</td>
+                            <td>
+                                <a href="booking-info.html" target="_blank">View Details</a>
+                                <!-- <button class="btn btn-primary">Edit</button> -->
+                                <!-- <a href="print.html"><i class="fa fa-print fs-5 text-primary bt" aria-hidden="true"></i></a>
+                                <i class="fa fa-pencil-square fs-5 text-success mx-3 bt" aria-hidden="true"></i>
+                                <i class="fa fa-trash fs-5 text-danger bt" aria-hidden="true"></i> -->
+                            </td>
                         </tr>
                     </tbody>
                 </table>
