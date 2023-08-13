@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings - Darjeeling Cab</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fff;
+        }
+
+        .box {
+            background-color: #fc0;
+        }
+
+        .ribbon-long {
+            display: none;
+            /* Initially hidden */
+        }
+
+        .ribbion-short {
+            display: flex;
+        }
+
+        .btn-on:hover,
+        .btn-off:hover {
+            cursor: pointer;
+        }
+
+        .card-info {
+            display: none;
+        }
+
+        @media (max-width: 576px){
+            .card-info {
+                display: flex;
+            }
+
+            .table-info{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <h2 class="text-center">BOOKINGS</h2>
+        </div>
+
+        <div class="container">
+            <div class="row table-info">
+                <table class="table">
+                    <thead class="table-primary">
+                        <th>Booking ID</th>
+                        <th>Guest Name</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Vehicle</th>
+                        <th>Driver</th>
+                        <th>Vehicle no</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1001</td>
+                            <td>Sudipto Mondal</td>
+                            <td>15-10-2023</td>
+                            <td>18-10-2023</td>
+                            <td>INNOVA</td>
+                            <td>BIKASH</td>
+                            <td>WB 76A 1945</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row card-info">
+                <div class="col-lg-4">
+
+                    <!-- short-ribbon -->
+                    <div class="row ribbon-short" id="">
+                        <div class="col-1 btn-on" id=""><i class="fa fa-chevron-circle-down text-primary"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div class="col-3">1001</div>
+                        <div class="col text-primary">Swagato Bhattarchya</div>
+                    </div>
+                    <!-- short-ribbon end -->
+
+                    <!-- long-ribbon -->
+                    <div class="row ribbon-long" id="">
+                        <div class="col-1 btn-off" id=""><i class="fa fa-chevron-circle-up text-primary"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div class="col-3">Name</div>
+                        <div class="col text-primary">Swagato Bhattarchya</div>
+                        <div class="info" id="info">
+                            <div class="row mt-3">
+                                <div class="col-1"></div>
+                                <div class="col-3">From</div>
+                                <div class="col text-primary">15-10-2023</div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-1"></div>
+                                <div class="col-3">To</div>
+                                <div class="col text-primary">18-10-2023</div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-1"></div>
+                                <div class="col-3">Action</div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-3"><i class="fa fa-trash fs-3 text-danger"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-3"><i class="fa fa-pencil-square fs-3 text-success"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-4"><i class="fa fa-print fs-3 text-primary"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- long-ribbon end -->
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row card-info">
+                <div class="col-lg-4">
+
+                    <!-- short-ribbon -->
+                    <div class="row ribbon-short" id="">
+                        <div class="col-1 btn-on" id=""><i class="fa fa-chevron-circle-down text-primary"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div class="col-3">1001</div>
+                        <div class="col text-primary">Swagato Bhattarchya</div>
+                    </div>
+                    <!-- short-ribbon end -->
+
+                    <!-- long-ribbon -->
+                    <div class="row ribbon-long" id="">
+                        <div class="col-1 btn-off" id=""><i class="fa fa-chevron-circle-up text-primary"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div class="col-3">Name</div>
+                        <div class="col text-primary">Swagato Bhattarchya</div>
+                        <div class="info" id="info">
+                            <div class="row mt-3">
+                                <div class="col-1"></div>
+                                <div class="col-3">From</div>
+                                <div class="col text-primary">15-10-2023</div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-1"></div>
+                                <div class="col-3">To</div>
+                                <div class="col text-primary">18-10-2023</div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-1"></div>
+                                <div class="col-3">Action</div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-3"><i class="fa fa-trash fs-3 text-danger"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-3"><i class="fa fa-pencil-square fs-3 text-success"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-4"><i class="fa fa-print fs-3 text-primary"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- long-ribbon end -->
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row card-info">
+                <div class="col-lg-4">
+
+                    <!-- short-ribbon -->
+                    <div class="row ribbon-short" id="">
+                        <div class="col-1 btn-on" id=""><i class="fa fa-chevron-circle-down text-primary"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div class="col-3">1001</div>
+                        <div class="col text-primary">Swagato Bhattarchya</div>
+                    </div>
+                    <!-- short-ribbon end -->
+
+                    <!-- long-ribbon -->
+                    <div class="row ribbon-long" id="">
+                        <div class="col-1 btn-off" id=""><i class="fa fa-chevron-circle-up text-primary"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div class="col-3">Name</div>
+                        <div class="col text-primary">Swagato Bhattarchya</div>
+                        <div class="info" id="info">
+                            <div class="row mt-3">
+                                <div class="col-1"></div>
+                                <div class="col-3">From</div>
+                                <div class="col text-primary">15-10-2023</div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-1"></div>
+                                <div class="col-3">To</div>
+                                <div class="col text-primary">18-10-2023</div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-1"></div>
+                                <div class="col-3">Action</div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-3"><i class="fa fa-trash fs-3 text-danger"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-3"><i class="fa fa-pencil-square fs-3 text-success"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-4"><i class="fa fa-print fs-3 text-primary"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- long-ribbon end -->
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        const shortRibbons = document.querySelectorAll('.ribbon-short');
+        const longRibbons = document.querySelectorAll('.ribbon-long');
+
+        shortRibbons.forEach((shortRibbon, index) => {
+            const longRibbon = longRibbons[index];
+            const btnOn = shortRibbon.querySelector('.btn-on');
+            const btnOff = longRibbon.querySelector('.btn-off');
+
+            btnOn.addEventListener('click', () => {
+                shortRibbon.style.display = 'none';
+                longRibbon.style.display = 'flex';
+            });
+
+            btnOff.addEventListener('click', () => {
+                shortRibbon.style.display = 'flex';
+                longRibbon.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
