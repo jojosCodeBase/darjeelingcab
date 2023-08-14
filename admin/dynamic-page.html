@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Add Text Field</title>
+</head>
+<body>
+
+<div>
+    <h2>Add Text Fields</h2>
+    <form id="textFieldForm">
+        <div id="textFields">
+            <input type="text" name="field1">
+        </div>
+        <button type="button" id="addFieldButton">Add New Field</button>
+    </form>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var fieldCounter = 2;
+    var addFieldButton = document.getElementById("addFieldButton");
+    var textFields = document.getElementById("textFields");
+
+    addFieldButton.addEventListener("click", function() {
+        var newTextField = document.createElement("input");
+        newTextField.type = "text";
+        newTextField.name = "field" + fieldCounter;
+        textFields.appendChild(newTextField);
+
+        fieldCounter++;
+    });
+});
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Row</title>
+    <link rel="icon" href="/img/darjeelingcab-logo.png" type="image/x-icon">
+</head>
+<body>
+
+<div>
+    <h2>Add New Rows</h2>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Field 1</th>
+                
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td><input type="text" name="field1[]"></td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <a href="index.html" download>Download link</a>
+    <button type="button" id="addRowButton">Add New Row</button>
+</div>
+
+<script>
+ window.onload =  function() {
+    var rowCounter = 1; // Start at 2 since the first row is already present
+
+    var addRowButton = document.getElementById("addRowButton");
+    var tableBody = document.getElementById("tableBody");
+
+    addRowButton.addEventListener("click", function() {
+        var newRow = document.createElement("span");
+        newRow.innerHTML = `
+            <div>Hello, World!</div>
+
+        `;
+
+        tableBody.appendChild(newRow);
+
+        rowCounter++;
+    });
+};
+</script>
+
+</body>
+</html>
+

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Info</title>
+    <link rel="icon" href="/img/darjeelingcab-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
@@ -30,6 +31,12 @@
         .title{
             font-weight: bold;
             text-align: center;
+        }
+
+        @media print{
+            .buttons{
+                display: none;
+            }
         }
     </style>
 </head>
@@ -124,7 +131,7 @@
 
                     <div class="buttons">
                         <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn btn-primary">Print</button></div>
+                            <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn btn-primary" onclick="window.print();">Print</button></div>
                             <div class="col-1 d-flex justify-content-center align-items-center mx-3"><button class="btn btn-success">Edit</button></div>
                             <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn btn-danger">Delete</button></div>
                         </div>
